@@ -1,19 +1,17 @@
-import { StyleSheet, View } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 import Onboarding from "../screens/Onboarding";
 
 export default function Page() {
   return (
-    <View style={styles.container}>
-      <View style={styles.main}>
-        <Onboarding/>
-      </View>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Onboarding />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {},
-  main: {
-    flex: 1
-  }
+  container: {
+    flex: 1,
+  },
+  main: {},
 });
